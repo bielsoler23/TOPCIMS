@@ -1,54 +1,121 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOPCIMS - Registre</title>
+
+  <title>Crea el teu compte | TOPCIMS</title>
+
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Inter:wght@500&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: 'Inter'; }
-    .titol { font-family: 'Oswald'; }
+    body {
+      font-family: 'Inter';
+    }
+
+    .titol {
+      font-family: 'Oswald';
+    }
+
+    :focus-visible {
+      outline: 3px solid #F1EBDF;
+      outline-offset: 3px;
+    }
   </style>
 </head>
 
-<body class="min-h-screen flex flex-col bg-cover bg-center text-[#F1EBDF]" style="background-image: url('img/registre.jpg');">
 
-  <header class="flex items-center gap-2 p-6">
-    <img src="img/logo.svg" alt="logo" class="w-10">
-    <a href="index.html" class="titol text-3xl">TOPCIMS</a>
+<body class="min-h-screen flex flex-col bg-cover bg-center text-[#F1EBDF]"
+      style="background-image: linear-gradient(to left, #040F0F, transparent), url('img/registre.jpg');">
+
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#F1EBDF] text-[#0B1A1C] px-4 py-2 rounded-lg">
+    Salta al contingut principal
+  </a>
+
+
+  <!-- HEADER -->
+  <header class="p-6">
+
+    <a href="index.html" class="flex items-center gap-2 w-fit">
+      <img src="img/logo.svg" alt="" class="w-10">
+      <span class="titol text-3xl">TOPCIMS</span>
+    </a>
+
   </header>
 
-  <main class="flex-1 flex justify-end items-start p-6">
-    <div class="w-[550px] bg-black/60 rounded-lg p-10">
+
+  <!-- CONTINGUT -->
+  <main id="main" class="flex-1 flex justify-end items-start p-6">
+
+    <div class="w-full md:w-1/2 bg-black/60 rounded-lg p-10">
+
       <h1 class="titol text-5xl text-center">CREA EL TEU COMPTE</h1>
-      <p class="text-sm text-center">Uneix-te a la comunitat i comença a registrar els teus cims</p>
 
-      <form>
-        <p class="titol text-lg mt-8">NOM D'USUARI</p>
-        <input type="text" class="w-full bg-[#F1EBDF] text-black rounded-lg p-3">
+      <p class="text-sm text-center">
+        Uneix-te a la comunitat i comença a registrar els teus cims
+      </p>
 
-        <p class="titol text-lg mt-4">CORREU ELECTRÒNIC</p>
-        <input type="email" class="w-full bg-[#F1EBDF] text-black rounded-lg p-3">
 
-        <p class="titol text-lg mt-4">CONTRASENYA</p>
-        <input type="password" class="w-full bg-[#F1EBDF] text-black rounded-lg p-3">
+      <!-- FORMULARI -->
+      <form id="formulari" novalidate>
 
-        <button class="titol w-full bg-[#B93812] text-xl rounded-full py-2 mt-8">REGISTRAR-SE</button>
+        <label for="usuari" class="block titol text-lg mt-8">NOM D'USUARI</label>
+        <input type="text" id="usuari" name="usuari" autocomplete="username" required
+               class="w-full bg-[#F1EBDF] text-black rounded-lg p-3">
+
+        <label for="correu" class="block titol text-lg mt-4">CORREU ELECTRÒNIC</label>
+        <input type="email" id="correu" name="correu" autocomplete="email" required
+               class="w-full bg-[#F1EBDF] text-black rounded-lg p-3">
+
+        <label for="contrasenya" class="block titol text-lg mt-4">CONTRASENYA</label>
+        <input type="password" id="contrasenya" name="contrasenya" autocomplete="new-password" required
+               class="w-full bg-[#F1EBDF] text-black rounded-lg p-3">
+
+        <!-- aqui surten els errors -->
+        <p id="error" aria-live="assertive" class="font-bold mt-4"></p>
+
+        <button type="submit" class="titol w-full bg-[#B93812] text-xl rounded-full py-2 mt-4">
+          REGISTRAR-SE
+        </button>
+
       </form>
 
-      <p class="text-sm text-center mt-4">Ja tens un compte? Inicia sessió <a href="login.html" class="underline">aquí</a></p>
+
+      <p class="text-sm text-center mt-4">
+        Ja tens un compte? Inicia sessió <a href="login.html" class="underline">aquí</a>
+      </p>
+
     </div>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="flex justify-between bg-[#0B1A1C] px-6 py-3">
+
     <p class="titol">© 2026 TOPCIMS</p>
-    <div class="flex gap-4">
-      <img src="img/instagram.svg" alt="instagram" class="w-5">
-      <img src="img/twitter.svg" alt="twitter" class="w-5">
-      <img src="img/facebook.svg" alt="facebook" class="w-5">
-    </div>
+
+    <nav aria-label="Xarxes socials" class="flex gap-4">
+      <a href="https://www.instagram.com">
+        <img src="img/instagram.svg" alt="Instagram" class="w-5">
+      </a>
+      <a href="https://x.com">
+        <img src="img/twitter.svg" alt="Twitter" class="w-5">
+      </a>
+      <a href="https://www.facebook.com">
+        <img src="img/facebook.svg" alt="Facebook" class="w-5">
+      </a>
+    </nav>
+
   </footer>
 
+
+  <script src="js/registre.js"></script>
+
 </body>
+
 </html>

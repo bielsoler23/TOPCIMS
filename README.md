@@ -1,6 +1,6 @@
 # TOPCIMS
 
-Web catàleg de cims fet per excursionistes.
+Web catàleg de cims fet per excursionistes. Projecte de l'assignatura de Disseny (2n de DAW).
 
 ## Pàgines
 
@@ -17,7 +17,9 @@ Web catàleg de cims fet per excursionistes.
 
 ## Com veure-ho
 
-Obre `index.html` al navegador.
+Web publicada: https://bielsoler.cat/topcims/
+
+També pots obrir `index.html` al navegador.
 
 ## Autor
 
