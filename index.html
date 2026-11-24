@@ -46,8 +46,8 @@
     </a>
 
     <nav aria-label="Navegació principal" class="flex gap-2">
-      <a href="login.html" class="titol bg-[#0B1A1C] px-4 py-2 rounded-full">ACCEDIR</a>
-      <a href="registre.html" class="titol bg-[#F1EBDF] text-[#0B1A1C] px-4 py-2 rounded-full">REGISTRAR-SE</a>
+      <a href="login.html" class="titol bg-[#0B1A1C] border-2 border-transparent px-4 py-2 rounded-full">ACCEDIR</a>
+      <a href="registre.html" class="titol bg-[#F1EBDF] text-[#0B1A1C] border-2 border-transparent px-4 py-2 rounded-full">REGISTRAR-SE</a>
     </nav>
 
   </header>
@@ -69,21 +69,22 @@
 
 
     <!-- botons grans -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+    <div class="grid grid-cols-1 xl:grid-cols-3 gap-6 mt-12">
 
-      <a href="cataleg.html" class="flex items-center justify-center gap-4 bg-[#B93812] rounded-lg py-12">
+      <a href="cataleg.html" class="flex items-center justify-center gap-4 bg-[#B93812] border-2 border-transparent rounded-lg py-12">
         <img src="img/cataleg.svg" alt="" class="w-12">
         <span class="titol text-5xl">CATÀLEG</span>
       </a>
 
-      <a href="mapa.html" class="flex items-center justify-center gap-4 bg-black/60 rounded-lg py-12">
+      <a href="mapa.html" class="flex items-center justify-center gap-4 bg-black/60 border-2 border-transparent rounded-lg py-12">
         <img src="img/mapa.svg" alt="" class="w-12">
         <span class="titol text-5xl">MAPA</span>
       </a>
 
-      <a href="login.html" class="flex items-center justify-center gap-4 bg-black/60 rounded-lg py-12">
+      <a href="login.html" class="flex items-center justify-center gap-4 bg-black/60 border-2 border-transparent rounded-lg py-12">
         <img src="img/afegir.svg" alt="" class="w-12">
         <span class="titol text-5xl">AFEGIR</span>
+        <span class="sr-only">(cal iniciar sessió)</span>
       </a>
 
     </div>
@@ -92,9 +93,15 @@
 
 
   <!-- FOOTER -->
-  <footer class="flex justify-between bg-[#0B1A1C] px-6 py-3">
+  <footer class="flex flex-wrap justify-between gap-4 bg-[#0B1A1C] px-6 py-3">
 
     <p class="titol">© 2026 TOPCIMS</p>
+
+    <nav aria-label="Peu de pàgina" class="flex gap-6">
+      <a href="index.html" class="titol hover:text-[#E8692E]">INICI</a>
+      <a href="login.html" class="titol hover:text-[#E8692E]">ACCEDIR</a>
+      <a href="registre.html" class="titol hover:text-[#E8692E]">REGISTRAR-SE</a>
+    </nav>
 
     <nav aria-label="Xarxes socials" class="flex gap-4">
       <a href="https://www.instagram.com">

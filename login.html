@@ -38,12 +38,17 @@
 
 
   <!-- HEADER -->
-  <header class="p-6">
+  <header class="flex flex-wrap justify-between items-center gap-4 p-6">
 
-    <a href="index.html" class="flex items-center gap-2 w-fit">
+    <a href="index.html" class="flex items-center gap-2">
       <img src="img/logo.svg" alt="" class="w-10">
       <span class="titol text-3xl">TOPCIMS</span>
     </a>
+
+    <nav aria-label="Navegació principal" class="flex gap-2">
+      <a href="login.html" aria-current="page" class="titol bg-[#0B1A1C] border-2 border-transparent px-4 py-2 rounded-full">ACCEDIR</a>
+      <a href="registre.html" class="titol bg-[#F1EBDF] text-[#0B1A1C] border-2 border-transparent px-4 py-2 rounded-full">REGISTRAR-SE</a>
+    </nav>
 
   </header>
 
@@ -51,7 +56,7 @@
   <!-- CONTINGUT -->
   <main id="main" class="flex-1 p-6">
 
-    <div class="w-full md:w-1/2 bg-black/60 rounded-lg p-10">
+    <div class="w-full md:w-1/2 bg-black/60 rounded-lg p-6 md:p-10">
 
       <h1 class="titol text-5xl text-center">TORNA A TOPCIMS</h1>
 
@@ -65,11 +70,11 @@
 
         <label for="correu" class="block titol text-lg mt-8">CORREU ELECTRÒNIC</label>
         <input type="email" id="correu" name="correu" autocomplete="email" required
-               class="w-full bg-[#F1EBDF] text-black rounded-lg p-3">
+               class="w-full bg-[#F1EBDF] text-black border-2 border-transparent rounded-lg p-3">
 
         <label for="contrasenya" class="block titol text-lg mt-4">CONTRASENYA</label>
         <input type="password" id="contrasenya" name="contrasenya" autocomplete="current-password" required
-               class="w-full bg-[#F1EBDF] text-black rounded-lg p-3">
+               class="w-full bg-[#F1EBDF] text-black border-2 border-transparent rounded-lg p-3">
 
         <p class="text-sm text-right mt-1">
           <a href="contrasenya.html" class="underline">Has oblidat la contrasenya?</a>
@@ -78,7 +83,7 @@
         <!-- aqui surten els errors -->
         <p id="error" aria-live="assertive" class="font-bold mt-4"></p>
 
-        <button type="submit" class="titol w-full bg-[#B93812] text-xl rounded-full py-2 mt-4">
+        <button type="submit" class="titol w-full bg-[#B93812] text-xl border-2 border-transparent rounded-full py-2 mt-4">
           INICIAR SESSIÓ
         </button>
 
@@ -95,9 +100,15 @@
 
 
   <!-- FOOTER -->
-  <footer class="flex justify-between bg-[#0B1A1C] px-6 py-3">
+  <footer class="flex flex-wrap justify-between gap-4 bg-[#0B1A1C] px-6 py-3">
 
     <p class="titol">© 2026 TOPCIMS</p>
+
+    <nav aria-label="Peu de pàgina" class="flex gap-6">
+      <a href="index.html" class="titol hover:text-[#E8692E]">INICI</a>
+      <a href="login.html" class="titol hover:text-[#E8692E]">ACCEDIR</a>
+      <a href="registre.html" class="titol hover:text-[#E8692E]">REGISTRAR-SE</a>
+    </nav>
 
     <nav aria-label="Xarxes socials" class="flex gap-4">
       <a href="https://www.instagram.com">
